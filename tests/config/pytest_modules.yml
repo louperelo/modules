@@ -2643,6 +2643,10 @@ raxmlng:
   - modules/nf-core/raxmlng/**
   - tests/modules/nf-core/raxmlng/**
 
+rgi/autoload:
+  - modules/nf-core/rgi/autoload/**
+  - tests/modules/nf-core/rgi/autoload/**
+
 rgi/main:
   - modules/nf-core/rgi/main/**
   - tests/modules/nf-core/rgi/main/**
@@ -3541,10 +3545,6 @@ whamg:
   - modules/nf-core/whamg/**
   - tests/modules/nf-core/whamg/**
 
-wisecondorx/convert:
-  - modules/nf-core/wisecondorx/convert/**
-  - tests/modules/nf-core/wisecondorx/convert/**
-
 windowmasker/mk_counts:
   - modules/nf-core/windowmasker/mk_counts/**
   - tests/modules/windowmasker/mk_counts/**
@@ -3552,6 +3552,10 @@ windowmasker/mk_counts:
 windowmasker/ustat:
   - modules/nf-core/windowmasker/ustat/**
   - tests/modules/windowmasker/ustat/**
+
+wisecondorx/convert:
+  - modules/nf-core/wisecondorx/convert/**
+  - tests/modules/nf-core/wisecondorx/convert/**
 
 yahs:
   - modules/nf-core/yahs/**

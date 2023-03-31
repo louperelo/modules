@@ -1,0 +1,35 @@
+name: "rgi_autoload"
+description: Download CARD database for Resistance Gene Identifier (RGI).
+keywords:
+  - CARD
+  - database
+  - bacteria
+  - antibiotic resistance
+tools:
+  - "rgi":
+      description: "This tool provides a preliminary annotation of your DNA sequence(s) based upon the data available in The Comprehensive Antibiotic Resistance Database (CARD). Hits to genes tagged with Antibiotic Resistance ontology terms will be highlighted. As CARD expands to include more pathogens, genomes, plasmids, and ontology terms this tool will grow increasingly powerful in providing first-pass detection of antibiotic resistance associated genes. See license at CARD website"
+      homepage: https://card.mcmaster.ca
+      documentation: https://github.com/arpcard/rgi
+      tool_dev_url: https://github.com/arpcard/rgi
+      doi: "10.1093/nar/gkz935"
+      licence: "['https://card.mcmaster.ca/about']"
+
+output:
+  - versions:
+      type: file
+      description: File containing software versions
+      pattern: "versions.yml"
+  - card_db:
+      type: directory
+      description: Directory containing CARD database files
+      pattern: "*/rgi_autoload_*/"
+  - tool_version:
+      type: string
+      description: The version of the tool in string format (useful for downstream tools such as hAMRronization)
+  - db_version:
+      type: string
+      description: The version of the downloaded database in string format (useful for downstream tools such as hAMRronization)
+
+
+authors:
+  - "@louperelo"
